@@ -2,7 +2,8 @@
   <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-
+    {% block infos %}
+    {% endblock %}
     <link rel="stylesheet" href="{{url_for('static', filename='css/default.css')}}">
     <script src="https://kit.fontawesome.com/10a3c48e4c.js" crossorigin="anonymous"></script>
     {% block styled %}
