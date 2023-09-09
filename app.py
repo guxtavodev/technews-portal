@@ -14,5 +14,10 @@ class Noticia(db.Model):
   content = db.Column(db.String())
   tag = db.Column(db.String()) # Informações da Notícia, Ex.: Desenvolvimento Web, Python, Ciência de Dados...
 
+with app.app_context():
+    db.create_all()
+
+from routes import * 
+
 if __name__ == "__main__":
   app.run(host="0.0.0.0", port=9090)

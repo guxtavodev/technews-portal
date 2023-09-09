@@ -1,0 +1,30 @@
+<html>
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" href="{{url_for('static', filename='css/default.css')}}">
+    <script src="https://kit.fontawesome.com/10a3c48e4c.js" crossorigin="anonymous"></script>
+    {% block styled %}
+
+    {% endblock %}
+  </head>
+  <body>
+     <header>
+    <h1>TechNews Portal</h1>
+    <nav>
+      <a href="/">
+        <i class="fa-solid fa-house"></i>
+      </a>
+      <a href="/search">
+        <i class="fa-brands fa-searchengin"></i>
+      </a>
+    
+    </nav>
+  </header>
+    {% block content %}
+
+    {% endblock %}
+  <script src="{{ url_for('static', filename='js/base.js') }}"></script>
+  </body>
+</html>
