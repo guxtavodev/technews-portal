@@ -26,9 +26,10 @@ background: linear-gradient(to bottom, #17155E, #408DA1);
   border-radius: 6px;
 }
 
-.container h2{
+.container h3{
   font-size: 2em;
   font-family: 'Poppins';
+  text-align: center;
 }
 
 header {

@@ -1,0 +1,19 @@
+.list-tags{
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+
+.list-tags a{
+  padding: 8px;
+  border: 0.5px solid #fff;
+  border-radius: 120px;
+  text-decoration: none;
+  transition: 0.2s;
+}
+
+.list-tags a:hover{
+  background: #fff;
+  color: #000;
+  transition: 0.2s;
+}

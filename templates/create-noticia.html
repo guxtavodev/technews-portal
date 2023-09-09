@@ -1,0 +1,20 @@
+{% extends 'base.html' %}
+
+{% block styled %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/create.css') }}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h3>Criar Notícia</h3>
+  <form action="/api/create-noticia" method="POST">
+    <input type="text" placeholder="Título da Notícia" name="title">
+
+    <textarea placeholder="Conteúdo da Notícia" name="conteudo"></textarea>
+
+    <input type="text" placeholder="Digite a tag da Notícia" name="tag">
+
+    <input type="submit" value="Publicar">
+  </form>
+</div>
+{% endblock %}

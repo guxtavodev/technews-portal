@@ -1,12 +1,12 @@
 {% extends 'base.html' %}
 
 {% block styled %}
-<link rel="stylesheet" href="{{ url_for('static', filename='css/index.css')}}">
+<link rel="stylesheet" href="{{ url_for('static', filename='css/tags.css')}}">
 {% endblock %}
 
 {% block content %}
-  <div class="container">
-    <h3>Principais Notícias do Dia</h3>
+<div class="container">
+    <h3>Resultados</h3>
     <div class="list-noticias">
       
       {% for ntc in news %}

@@ -1,0 +1,16 @@
+{% extends 'base.html' %}
+
+{% block styled %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/noticia.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h3>{{artigo.title}}</h3>
+  <p onclick="window.location.href='/tag/{{artigo.tag}}'" class="tag">{{artigo.tag}}</p>
+  <hr>
+  <p>
+    {{artigo.content | safe}}
+  </p>
+</div>
+{% endblock %}

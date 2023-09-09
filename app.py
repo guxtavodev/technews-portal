@@ -3,15 +3,15 @@ from flask_cors import CORS
 from flask_sqlalchemy import SQLAlchemy
 
 app = Flask(__name__)
-app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data4.db'
+app.config['SQLALCHEMY_DATABASE_URI'] = 'sqlite:///data1.db' # Caminho do arquivo do banco de dados
 app.secret_key = "123"
 db = SQLAlchemy(app)
 CORS(app)
 
 class Noticia(db.Model):
-  title = db.Column(db.String())
-  id = db.Column(db.String(), primary_key=True)
-  content = db.Column(db.String())
+  title = db.Column(db.String()) # Titulo da Notícia
+  id = db.Column(db.String(), primary_key=True) # ID da notícia
+  content = db.Column(db.String()) # Conteudo da notícia.
   tag = db.Column(db.String()) # Informações da Notícia, Ex.: Desenvolvimento Web, Python, Ciência de Dados...
 
 with app.app_context():

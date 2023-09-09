@@ -1,0 +1,15 @@
+.noticia {
+  border: 0.5px solid #fff;
+  border-radius: 6px;
+  padding: 5px;
+}
+
+.noticia h4{
+  font-size: 1.5em;
+}
+
+.list-noticias {
+  display: flex;
+  flex-direction: column-reverse;
+  gap: 1em;
+}

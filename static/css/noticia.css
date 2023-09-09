@@ -1,0 +1,25 @@
+.tag{
+  margin: 0 auto;
+  width: 10%;
+  padding: 4px;
+  border: 0.5px solid #fff;
+  border-radius: 120px;
+  text-align: center;
+  margin-bottom: 1em;
+  cursor: pointer;
+  transition: 0.2s;
+}
+
+hr {
+  margin-bottom: 1em;
+}
+
+.tag:hover{
+  background: #fff;
+  color: #000;
+  transition: 0.2s;
+}
+
+ul{
+  margin-left: 1em;
+}

@@ -1,0 +1,19 @@
+{% extends 'base.html' %}
+
+{% block styled %}
+<link rel="stylesheet" href="{{ url_for('static', filename='css/search.css')}}">
+{% endblock %}
+
+{% block content %}
+<div class="container">
+  <h3>Tags Disponiveis</h3>
+  <div class="list-tags">
+    {% for tag in tags %}
+    <a href="/tag/{{tag}}">
+      #{{tag}}
+    </a>
+    {% endfor %}
+
+  </div>
+</div>
+{% endblock %}
